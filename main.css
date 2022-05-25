@@ -54,10 +54,15 @@ table {
     src: url(./Assests/Roboto-Medium.ttf);
 }
 
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(./Assests/Roboto-Bold.ttf);
+}
+
 body {
     height: 100vh;
     display: grid;
-    grid-template: 1fr 8fr / 1fr 3.5fr;
+    grid-template: 1fr 7fr / 1fr 3.5fr;
     grid-template-areas:
         "sidebar header"
         "sidebar main-content"
@@ -101,6 +106,93 @@ h1 {
 
 #header {
     grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    align-content: space-between;
+    padding: 20px 40px 0px 40px;
+}
+
+#subheader-1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: space-between;
+}
+
+#search {
+    display: grid;
+    grid-template-columns: 0.5fr 8fr;
+    align-items: center;
+}
+
+input {
+    background-color: #DDE4EE;
+    border: none;
+    width: 50em;
+    height: 2.5em;
+    border-radius: 2em;
+}
+
+#user {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    justify-items: end;
+    align-items: center;
+    gap: 30px;
+}
+
+#user p {
+    font-family: Roboto-Bold;
+    font-size: 18px;
+}
+
+.avatar-small {
+    height: 50px;
+    width: 50px;
+}
+
+#subheader-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: space-between;
+    align-items: center;
+}
+
+#user-welcome {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-content: start;
+    align-items: center;
+}
+
+.avatar-big {
+    height: 80px;
+    width: 80px;
+}
+
+#cheer {
+    font-family: Roboto-Bold;
+    margin-bottom: 10px;
+}
+
+#user-text {
+    font-family: Roboto-Bold;
+    font-size: 26px;
+}
+
+#control-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: end;
+}
+
+#control-buttons button {
+    background-color: #0087CE;
+    color: white;
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    height: 3em;
+    width: 7em;
+    border-radius: 2.5em;
 }
 
 #main-content {
