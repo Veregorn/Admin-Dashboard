@@ -59,6 +59,11 @@ table {
     src: url(./Assests/Roboto-Bold.ttf);
 }
 
+@font-face {
+    font-family: Roboto-Light;
+    src: url(./Assests/Roboto-Light.ttf);
+}
+
 body {
     height: 100vh;
     display: grid;
@@ -110,6 +115,7 @@ h1 {
     grid-template-rows: 1fr 2fr;
     align-content: space-between;
     padding: 20px 40px 0px 40px;
+    box-shadow: 2px 2px 5px #656565c2;
 }
 
 #subheader-1 {
@@ -196,6 +202,112 @@ input {
 }
 
 #main-content {
+    padding: 30px 20px;
     background-color: #DDE4EE;
     grid-area: main-content;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 3fr 1fr;
+}
+
+#cards {
+    display: grid;
+    grid-template: repeat(auto-fit, minmax(100px, 1fr)) / repeat(auto-fit, minmax(300px, 1fr)) ;
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 1em;
+    padding: 30px 20px;
+    border-left: solid 10px #F2AA29;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    align-content: space-between;
+    box-shadow: 2px 2px 5px #a7a6a6c2;
+}
+
+.subtitle {
+    font-family: Roboto-Medium;
+    font-size: 18px;
+    margin-bottom: 0.5em;
+}
+
+.desc {
+    font-family: Roboto-Light;
+    color: #7c7b7b;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+.controls {
+    justify-self: end;
+    align-self: end;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+#right-content {
+    display: grid;
+    gap: 40px;
+    grid-template-rows: 1fr 2fr;
+    align-items: start;
+}
+
+.container {
+    background-color: white;
+    border-radius: 1em;
+    padding: 30px;
+    box-shadow: 2px 2px 5px #a7a6a6c2;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+.announ {
+    border-bottom: 1px solid rgb(190, 188, 188);
+    padding-bottom: 20px;
+}
+
+.announ:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.bolded {
+    font-family: Roboto-Medium;
+    font-size: 15px;
+    margin-bottom: 0.5em;
+}
+
+.tiny {
+    font-family: Roboto-Light;
+    color: #7c7b7b;
+    font-size: 13px;
+}
+
+.title {
+    font-family: Roboto-Medium;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.users {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.tiny-user{
+    font-family: Roboto-Light;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.caption {
+    font-family: Roboto-Light;
+    font-size: 14px;
+    color: #7c7b7b;
 }
